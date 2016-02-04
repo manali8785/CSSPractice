@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interview excercise</title>
+    <style>
+        body,html{
+            height:100%
+        }
+
+        #container{
+         width: 600px;
+         height: 600px;
+         border:1px solid black;
+        }
+
+        .box{
+            width: 32%;
+            height: 32%;
+            border: 1px solid black;
+            float:left;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body><h1>Welcome to CSS Practice</h1>
+<div id="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+</div>
+</body>
+<script>
+
+    var count=1;
+    var box=document.getElementsByClassName("box");
+    console.log(box);
+
+    document.addEventListener('DOMContentLoaded',function(){
+        for(var i=0; i<box.length; i++) {
+            box[i].addEventListener("click", function(i){
+                        sum(i.target.innerText);
+            }, false);
+        }
+    });
+
+    function sum(i){
+        if(i%2 == 1) {
+            console.log('first time');
+
+        }else{
+            console.log('second time');
+        }
+        console.log("box clicked...", i, count++);
+    }
+
+</script>
+</html>

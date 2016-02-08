@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Header</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        body{
+            background-color: #bababa;
+        }
+        header{
+            background-color: lemonchiffon;
+            height:5em;
+            display: flex;
+        }
+        .img{
+            align-self: flex-start;
+        }
+        span{
+            width: 20%;
+            border: 1px solid black;
+            margin: auto;
+        }
+        nav{
+            display: flex;
+            width:30%;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        ul{
+            margin:0;
+            padding: 0;
+            border: 1px solid black;
+            width:70%;
+        }
+        li{
+            list-style-type: none;
+            display: inline;
+            margin-left: 7%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="true_icon.png"/>
+    <span>This is a header!</span>
+    <nav>
+        <ul>
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+            <li>link4</li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>

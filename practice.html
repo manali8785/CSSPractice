@@ -8,8 +8,9 @@
             height:30px;
             width:30px;
             border-radius: 30px;
-            background-color: #4dabff;
-            animation: snow 10s linear infinite;
+            background-color: #ffbb42;
+            position: relative;
+            opacity: 0.5;
         }
         @keyframes snow{
             0%{background-position: 0px 0px}
@@ -19,7 +20,6 @@
 
         .mainpage{
             background-color: #ffbb42;
-           // background-color: antiquewhite;
             width:100%;
             height:100vh;
             font-family: Adelle;
@@ -63,33 +63,21 @@
 
         }
         .content{
-            position: absolute;
+            position: relative;
         //   border:1px solid black;
             text-align: center;
             color: white;
             font-size: 6.25rem;
-            margin-top:230px;
-            margin-left:15%;
         }
         .data{
      //       border:1px solid green;
         }
 
-        .ppChallenge{
-            border:1px solid mediumblue;
-            overflow: hidden;
-            height:49px;
-            position: relative;
-            margin: 0 auto;
-            top:20px;
-        }
 
         .parentChallenge{
-            border:1px solid black;
             width:30%;
-            top:0px;
-            height:49px;
             position: absolute;
+            margin: 0 auto;
         }
 
         .challenge{
@@ -100,13 +88,8 @@
             border-radius: 21px;
             height:25px;
             padding: 10px 10px;
-     //       border: 1px solid black;
+     //     border: 1px solid black;
         }
-
-        div.ppChallenge:hover > div.parentChallenge{
-            top:-47px;
-        }
-
         .arrow{
             position:absolute;
          //   border:1px solid black;
@@ -134,17 +117,15 @@
     <div class="content">
         <div class="data">Lets make something</div>
         <div class="data">Extraordinary</div>
-        <div class="ppChallenge">
             <div class="parentChallenge">
                    <div class="challenge"><a>Set us a challenge!</a></div>
-                   <div class="challenge"><a>changed!</a></div>
             </div>
-        </div>
     </div>
     <div class="arrow">
         <img src="downarrow.png"/>
     </div>
 </div>
-
 </body>
+<script>
+</script>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries Practice</title>
+    <style>
+
+    @media (orientation: portrait){
+        body{
+                background-color: #1dee97;
+        }
+        body::after{
+            content:'Orientation is portrait'
+        }
+    }
+
+    @media (orientation: landscape){
+        body{
+            background-color: red;
+        }
+        body::after{
+            content:'Orientation is landscape'
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
